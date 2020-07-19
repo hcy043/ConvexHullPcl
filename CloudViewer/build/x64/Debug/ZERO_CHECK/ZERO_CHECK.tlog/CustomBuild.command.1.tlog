@@ -1,0 +1,10 @@
+^C:\USERS\HILMI\DESKTOP\PCLPROJECTS\CLOUDVIEWER\BUILD\CMAKEFILES\89CF3394C85BC8F85C589D766E4B78F1\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/hilmi/Desktop/PCLProjects/CloudViewer -BC:/Users/hilmi/Desktop/PCLProjects/CloudViewer/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/Users/hilmi/Desktop/PCLProjects/CloudViewer/build/cloud_viewer.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
